@@ -11,6 +11,8 @@ public class PlayerInput : MonoBehaviour {
     public string horizontalAxis;
     public string verticalAxis;
 
+    public float horizontalSpeed = 3;
+    public float verticalSpeed = 3;
 
     private void Awake()
     {
@@ -23,7 +25,9 @@ public class PlayerInput : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        characterController.SimpleMove(new Vector3(Input.GetAxisRaw(horizontalAxis), 0, Input.GetAxisRaw(verticalAxis)));
+        characterController.SimpleMove(
+            transform.TransformDirection(
+                new Vector3(Input.GetAxisRaw(horizontalAxis)* horizontalSpeed, 0, Input.GetAxisRaw(verticalAxis)* verticalSpeed)));
 
     }
 }
