@@ -241,12 +241,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811ccd3c21fd4da46a64a52778c316dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: e40f55ff711a5654da6a8103a713221d, type: 3}
   horizontalAxis: Horizontal
   verticalAxis: Vertical
   testButton: Test
   horizontalSpeed: 3
   verticalSpeed: 3
   mouseLookRef: {fileID: 114914807172237792}
+  mouseEnabled: 1
+  movementEnabled: 1
 --- !u!114 &114465329343940882
 MonoBehaviour:
   m_ObjectHideFlags: 1
