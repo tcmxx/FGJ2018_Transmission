@@ -11,7 +11,7 @@ public class GamePlayUI : MonoBehaviour {
     public GameObject normalCursorRef;
     public GameObject interactableCursorRef;
     public Text cursorPromptTextRef;
-
+    public GameObject interactPanel;
     public float skyTextFadeTime = 2;
     public TCUtils.TCFadingUI fadeUIRef;
     public enum CursorType
@@ -60,6 +60,11 @@ public class GamePlayUI : MonoBehaviour {
         {
             cursorPromptTextRef.text = message;
         }
+    }
+
+    public void SetMiddleCursorEnable(bool enable)
+    {
+        interactPanel.SetActive(enable);
     }
 
 
