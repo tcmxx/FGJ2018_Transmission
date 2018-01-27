@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 /// MouseLook rotates the transform based on the mouse delta.
 /// Minimum and Maximum values can be used to constrain the possible rotation
@@ -34,6 +35,8 @@ public class MouseLook : MonoBehaviour
     public Transform xTransform;
     public Transform yTransform;
 
+    public Transform test;
+
     void Update()
     {
 
@@ -41,12 +44,7 @@ public class MouseLook : MonoBehaviour
 
     void Start()
     {
-        //if(!networkView.isMine)
-        //enabled = false;
-
-        // Make the rigid body not change rotation
-        //if (rigidbody)
-        //rigidbody.freezeRotation = true;
+        SmoothMoveRotTo(test.forward, 10, 3);
     }
 
 
@@ -72,5 +70,39 @@ public class MouseLook : MonoBehaviour
 
             yTransform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
         }
+    }
+
+
+
+    public void SmoothMoveRotTo(Vector3 front, float time, float maxSpeed, Action onMoveDone = null)
+    {
+        StartCoroutine(MoveRotTo(front, time, maxSpeed, onMoveDone));
+    }
+
+    IEnumerator MoveRotTo(Vector3 front, float time, float maxSpeed, Action onMoveDone)
+    {
+        yield return null;
+        float t = 0;
+        while(t < time)
+        {
+            t += Time.deltaTime;
+            RotationTowards(front, maxSpeed);
+            yield return null;
+        }
+        if(onMoveDone != null)
+        {
+            onMoveDone.Invoke();
+        }
+    }
+
+    public void RotationTowards(Vector3 front, float maxDeltaAngle)
+    {
+        front.y = 0;
+        front.Normalize();
+        xTransform.rotation = Quaternion.RotateTowards(xTransform.rotation, Quaternion.LookRotation(front, Vector3.up), maxDeltaAngle);
+
+        Vector3 localEulerAngles = yTransform.localEulerAngles;
+        float desiredYAngle = Mathf.Atan2(front.y, Mathf.Sqrt(front.x * front.x + front.z * front.z));
+        rotationY += Mathf.Clamp(maxDeltaAngle,0,Mathf.Abs(desiredYAngle - rotationY)) * Mathf.Sign(desiredYAngle - rotationY);
     }
 }

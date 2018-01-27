@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[ExecuteInEditMode]
 public class MovePath : MonoBehaviour {
 
+    public GameObject test;
 
     public List<Transform> paths;
 
     public UnityEvent onPathFinished;
     public bool autoTurning = true;
-    public float turningRadius = 0.2f;
+    public int steps = 100;
+    public List<Curves.CurvePoint> points = new List<Curves.CurvePoint>();
 
-    public List<Curves.CurvePoint> points;
+    [SerializeField]
+    private float moveTime;
+    [SerializeField]
+    private float moveTimer;
+    private Transform transformToMove = null;
 
     public enum PathMode
     {
@@ -22,26 +29,53 @@ public class MovePath : MonoBehaviour {
         CRspline
     }
 
+    public PathMode pathMode = PathMode.Bezier;
+
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        StartMove(test, 10);
+        EvaluatePath();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
+        
+        if (moveTimer > 0 && transformToMove != null)
+        {
+            moveTimer -=  Time.deltaTime;
+            float t = moveTimer / moveTime;
+            transformToMove.position = Curves.LerpTranslation(points, t);
+            if (autoTurning)
+                transformToMove.localRotation = Curves.LerpOrientation(points, t);
+        }
 	}
 
-    public void EvaluatePath(int steps)
+    public void EvaluatePath()
     {
-        //Curves.eve
+        List<Vector3> temppoints = new List<Vector3>();
+        for(int i = 0; i < paths.Count;++i)
+        {
+            temppoints.Add(paths[i].position);
+        }
+        if(pathMode == PathMode.Bezier)
+        {
+            points = Curves.EvalBezier(temppoints, steps);
+        }else if(pathMode == PathMode.Bspline)
+        {
+            points = Curves.EvalBspline(temppoints, steps, true);
+        }else if(pathMode == PathMode.CRspline)
+        {
+            points = Curves.EvalCRspline(temppoints, steps);
+        }
     }
 
 
-    public void StartMove(GameObject obj)
+    public void StartMove(GameObject obj, float time)
     {
-
+        moveTimer = time;
+        moveTime = time;
+        transformToMove = obj.transform;
     }
 
     public void StopMove(GameObject obj)
@@ -52,5 +86,22 @@ public class MovePath : MonoBehaviour {
     public void ResetMove()
     {
         
+    }
+
+
+
+    private void OnDrawGizmos()
+    {
+        EvaluatePath();
+        for (int i = 0; i < points.Count-1; ++i)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(points[i].V, points[i + 1].V);
+        }
+        foreach(var t in paths)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawSphere(t.position, 0.2f);
+        }
     }
 }

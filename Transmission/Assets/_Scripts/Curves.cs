@@ -42,6 +42,16 @@ public class Curves{
         public Vector3 N; // Normal   (unit)
         public Vector3 B; // Binormal (unit)
         public float t; // time	 (necessary only for the adaptive tessellation extra)
+
+        public Quaternion ToQuaternion()
+        {
+            Matrix4x4 rot = new Matrix4x4();
+            rot.SetColumn(0, N);
+            rot.SetColumn(1, B);
+            rot.SetColumn(2, T);
+            rot.SetColumn(3, new Vector4(0, 0, 0, 1));
+            return rot.ToQuaternion();
+        }
     };
 
     // Approximately equal to.  We don't want to use == because of
@@ -125,7 +135,7 @@ public class Curves{
             }
             curvePoint.B = Vector3.Cross(curvePoint.T, curvePoint.N).normalized;
 
-            R[i] = curvePoint;
+            R.Add(curvePoint);
         }
         return R;
     }
@@ -378,6 +388,45 @@ public class Curves{
         }
         // Return an empty curve right now.
         return result;
+    }
+
+
+
+
+    public static Quaternion LerpOrientation(List<CurvePoint> curve, float t)
+    {
+
+        // YOUR CODE HERE (extra)
+        // Use De Casteljau with spherical interpolation (slerp) to interpolate between orientation control points, 
+        // and convert interpolated quaternion to an orientation matrix
+        if (curve.Count == 0)
+            Debug.LogError("Lerped curve has zero point");
+        if (curve.Count < 1)
+        {
+            return curve[0].ToQuaternion();
+        }
+
+        int totalSegment = curve.Count - 1;
+        float segmentLength = 1.0f / totalSegment;
+        int segmentNumFort = Mathf.Clamp((int)(t / segmentLength), 0, totalSegment - 1);
+        float portionForThisSegment = t / segmentLength - segmentNumFort;
+        return Quaternion.Slerp(curve[segmentNumFort].ToQuaternion(), curve[segmentNumFort + 1].ToQuaternion(), portionForThisSegment);
+    }
+
+    public static Vector3 LerpTranslation(List<CurvePoint> curve, float t)
+    {
+        if (curve.Count == 0)
+            Debug.LogError("Lerped curve has zero point");
+        if(curve.Count < 1)
+        {
+            return curve[0].V;
+        }
+        t = Mathf.Clamp01(t);
+        int totalSegment = curve.Count - 1;
+        float segmentLength = 1.0f / totalSegment;
+        int segmentNumFort = Mathf.Clamp((int)(t / segmentLength),0,totalSegment-1);
+        float portionForThisSegment = t / segmentLength - segmentNumFort;
+        return Vector3.Lerp(curve[segmentNumFort].V, curve[segmentNumFort + 1].V, portionForThisSegment);
     }
 }
 
