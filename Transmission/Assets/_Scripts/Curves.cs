@@ -134,7 +134,7 @@ public class Curves{
 
     // the P argument holds the control points and steps gives the amount of uniform tessellation.
     // the rest of the arguments are for the adaptive tessellation extra.
-    public List<CurvePoint> EvalBezier(List<Vector3> P, int steps)
+    public static List<CurvePoint> EvalBezier(List<Vector3> P, int steps)
     {
         // Check
         if (P.Count < 4 || P.Count % 3 != 1)
@@ -190,7 +190,7 @@ public class Curves{
 
     // the P argument holds the control points and steps gives the amount of uniform tessellation.
     // the rest of the arguments are for the adaptive tessellation extra.
-    List<CurvePoint> EvalBspline(List<Vector3> P, int steps, bool averageBNT)
+    public static List<CurvePoint> EvalBspline(List<Vector3> P, int steps, bool averageBNT)
     {
         // Check
         if (P.Count < 4)
@@ -317,7 +317,7 @@ public class Curves{
 
     // the P argument holds the control points and steps gives the amount of uniform tessellation.
     // the rest of the arguments are for the adaptive tessellation extra.
-    List<CurvePoint> EvalCRspline(List<Vector3> P, int steps)
+    public static List<CurvePoint> EvalCRspline(List<Vector3> P, int steps)
     {
         // Check
         if (P.Count < 4)

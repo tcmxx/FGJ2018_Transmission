@@ -12,12 +12,14 @@ public class MovePath : MonoBehaviour {
     public bool autoTurning = true;
     public float turningRadius = 0.2f;
 
+    public List<Curves.CurvePoint> points;
+
     public enum PathMode
     {
         Direct,
         Bezier,
         Bspline,
-
+        CRspline
     }
 
 
@@ -31,7 +33,10 @@ public class MovePath : MonoBehaviour {
 		
 	}
 
-
+    public void EvaluatePath(int steps)
+    {
+        //Curves.eve
+    }
 
 
     public void StartMove(GameObject obj)
