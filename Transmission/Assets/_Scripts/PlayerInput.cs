@@ -19,8 +19,9 @@ public class PlayerInput : MonoBehaviour {
     public float verticalSpeed = 3;
     public MouseLook mouseLookRef;
 
-    private bool mouseEnabled = true;
+    private bool mouseMoveEnabled = true;
     private bool movementEnabled = true;
+    private bool mouseClickEnabled = true;
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -40,9 +41,13 @@ public class PlayerInput : MonoBehaviour {
                 transform.TransformDirection(
                     new Vector3(Input.GetAxisRaw(horizontalAxis) * horizontalSpeed, 0, Input.GetAxisRaw(verticalAxis) * verticalSpeed)));
         }
-        if (mouseEnabled)
+        if (mouseMoveEnabled)
         {
             mouseLookRef.Rotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+
+        }
+        if (mouseClickEnabled)
+        {
             if (Input.GetMouseButtonDown(0))
             {
                 PlayerController.Instance.OnInteract();
@@ -69,11 +74,13 @@ public class PlayerInput : MonoBehaviour {
 
     public void SetMouseMoveEnable(bool enable)
     {
-        mouseEnabled = enable;
+        mouseMoveEnabled = enable;
     }
     public void SetMovementEnable(bool enable)
     {
         movementEnabled = enable;
+        GamePlayUI.Instance.SetMiddleCursorEnable(enable);
+        mouseClickEnabled = enable;
     }
     void Test()
     {
