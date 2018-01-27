@@ -12,7 +12,8 @@ public class GamePlayUI : MonoBehaviour {
     public GameObject interactableCursorRef;
     public Text cursorPromptTextRef;
 
-
+    public float skyTextFadeTime = 2;
+    public TCUtils.TCFadingUI fadeUIRef;
     public enum CursorType
     {
         Normal,
@@ -26,7 +27,7 @@ public class GamePlayUI : MonoBehaviour {
     // Use this for initialization
     void Start () {
         SetCursor(CursorType.Normal);
-
+        //FadoutSkyText();
     }
 	
 	// Update is called once per frame
@@ -34,6 +35,15 @@ public class GamePlayUI : MonoBehaviour {
 		
 	}
 
+    public void FadinSkyText(string text)
+    {
+        fadeUIRef.FadeIn(skyTextFadeTime,null);
+        fadeUIRef.GetComponentInChildren<Text>().text = text;
+    }
+    public void FadoutSkyText()
+    {
+        fadeUIRef.FadeOut(skyTextFadeTime, null);
+    }
 
     public void SetCursor(CursorType type, string message = null) {
         if(type == CursorType.Interactive)
