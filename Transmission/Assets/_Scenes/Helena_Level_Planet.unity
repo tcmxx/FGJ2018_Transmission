@@ -967,7 +967,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: landscapeClicked
+          m_StringArgument: 1.3
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -2278,7 +2278,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: radioClicked
+          m_StringArgument: 1.1
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -2396,7 +2396,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: tableClicked
+          m_StringArgument: 1.2
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -6925,7 +6925,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1285341543}
+  - {fileID: 1285341515}
   selectedCommands: []
   variables: []
   description: 
@@ -6980,7 +6980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1285341515}
-  message: radioClicked
+  message: 1.1
 --- !u!114 &1285341514
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7829,7 +7829,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1285341539
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1285341510}
@@ -7946,7 +7946,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -308.96918
     y: -228.1851
-    width: 144.52051
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8465,7 +8465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1285341543}
-  message: landscapeClicked
+  message: 1.3
 --- !u!114 &1285341559
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8532,7 +8532,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1285341560
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1285341510}
@@ -9056,7 +9056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1285341581}
-  message: tableClicked
+  message: 1.2
 --- !u!114 &1285341577
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10774,7 +10774,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1285341607
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1285341510}
@@ -10801,7 +10801,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1285341608
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1285341510}
@@ -10827,7 +10827,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1285341609
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1285341510}
@@ -10853,7 +10853,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1285341610
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1285341510}
@@ -12637,6 +12637,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4445797462156332, guid: 6d9156c79f0c83541ab204b55c12fc29,
     type: 2}
   m_PrefabInternal: {fileID: 2097936999}
+--- !u!1 &1603346826 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1275678216413234, guid: c4125523d6b13c648af06946b9de74ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1654322098}
 --- !u!1001 &1654322098
 Prefab:
   m_ObjectHideFlags: 0
@@ -12734,6 +12739,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114037058402138514, guid: c4125523d6b13c648af06946b9de74ee,
+        type: 2}
+      propertyPath: interactPanel
+      value: 
+      objectReference: {fileID: 1603346826}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4125523d6b13c648af06946b9de74ee, type: 2}
   m_IsPrefabParent: 0
