@@ -6,13 +6,14 @@ using UnityEngine.Events;
 [ExecuteInEditMode]
 public class MovePath : MonoBehaviour {
 
-    public GameObject test;
+    public GameObject autoMovingObject = null;
 
     public List<Transform> paths;
 
     public UnityEvent onPathFinished;
     public bool autoTurning = true;
     public int steps = 100;
+    public bool looping = true;
     public List<Curves.CurvePoint> points = new List<Curves.CurvePoint>();
 
     [SerializeField]
@@ -34,7 +35,8 @@ public class MovePath : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        StartMove(test, 10);
+        if(autoMovingObject != null)
+            StartMove(autoMovingObject, moveTime);
         EvaluatePath();
     }
 	
@@ -48,6 +50,10 @@ public class MovePath : MonoBehaviour {
             transformToMove.position = Curves.LerpTranslation(points, t);
             if (autoTurning)
                 transformToMove.localRotation = Curves.LerpOrientation(points, t);
+            if(moveTimer <= 0 && looping)
+            {
+                ResetMove();
+            }
         }
 	}
 
@@ -78,14 +84,10 @@ public class MovePath : MonoBehaviour {
         transformToMove = obj.transform;
     }
 
-    public void StopMove(GameObject obj)
-    {
-
-    }
 
     public void ResetMove()
     {
-        
+        moveTimer = moveTime;
     }
 
 
