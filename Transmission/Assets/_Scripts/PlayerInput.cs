@@ -19,8 +19,8 @@ public class PlayerInput : MonoBehaviour {
     public float verticalSpeed = 3;
     public MouseLook mouseLookRef;
 
-    public bool mouseEnabled = true;
-    public bool movementEnabled = true;
+    private bool mouseEnabled = true;
+    private bool movementEnabled = true;
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -67,8 +67,14 @@ public class PlayerInput : MonoBehaviour {
         Cursor.visible = false;
     }
 
-
-
+    public void SetMouseMoveEnable(bool enable)
+    {
+        mouseEnabled = enable;
+    }
+    public void SetMovementEnable(bool enable)
+    {
+        movementEnabled = enable;
+    }
     void Test()
     {
         Flowchart.BroadcastFungusMessage("test");
