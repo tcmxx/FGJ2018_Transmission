@@ -9,7 +9,7 @@ public class PlayerInput : MonoBehaviour {
 
     protected CharacterController characterController;
 
-    public Texture cursorTexture;
+    public Texture2D cursorTexture;
 
     public string horizontalAxis;
     public string verticalAxis;
@@ -18,36 +18,46 @@ public class PlayerInput : MonoBehaviour {
     public float horizontalSpeed = 3;
     public float verticalSpeed = 3;
     public MouseLook mouseLookRef;
+
+    public bool mouseEnabled = true;
+    public bool movementEnabled = true;
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
     }
     // Use this for initialization
     void Start () {
-		//Cursor.SetCursor(cursorTexture,Vector2.zero,CursorMode.)
-	}
+        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        DisableMouseCursor();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        characterController.SimpleMove(
-            transform.TransformDirection(
-                new Vector3(Input.GetAxisRaw(horizontalAxis)* horizontalSpeed, 0, Input.GetAxisRaw(verticalAxis)* verticalSpeed)));
-
-        mouseLookRef.Rotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        if (movementEnabled)
+        {
+            characterController.SimpleMove(
+                transform.TransformDirection(
+                    new Vector3(Input.GetAxisRaw(horizontalAxis) * horizontalSpeed, 0, Input.GetAxisRaw(verticalAxis) * verticalSpeed)));
+        }
+        if (mouseEnabled)
+        {
+            mouseLookRef.Rotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+            if (Input.GetMouseButtonDown(0))
+            {
+                PlayerController.Instance.OnInteract();
+            }
+        }
         if (Input.GetButtonDown(testButton))
         {
             Test();
         }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            PlayerController.Instance.OnInteract();
-        }
     }
 
     public void EnableMouseCursor()
     {
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
@@ -56,6 +66,7 @@ public class PlayerInput : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+
 
 
     void Test()
