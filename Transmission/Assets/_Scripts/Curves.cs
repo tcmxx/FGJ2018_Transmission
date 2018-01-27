@@ -415,8 +415,10 @@ public class Curves{
 
     public static Vector3 LerpTranslation(List<CurvePoint> curve, float t)
     {
-        if (curve.Count == 0)
+        if (curve.Count == 0) {
             Debug.LogError("Lerped curve has zero point");
+            return Vector3.zero;
+                }
         if(curve.Count < 1)
         {
             return curve[0].V;
