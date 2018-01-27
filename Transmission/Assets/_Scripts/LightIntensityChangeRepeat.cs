@@ -3,17 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[RequireComponent(typeof(Light))]
+
 public class LightIntensityChangeRepeat : MonoBehaviour {
 
 
     public AnimationCurve changeCurve;
     public float cyclingTime;
     protected Light light;
+    protected AreaLight aLight;
+    protected TubeLight tLight;
+
     protected float currentTime = 0;
     private void Awake()
     {
         light = GetComponent<Light>();
+        aLight = GetComponent<AreaLight>();
+        tLight = GetComponent<TubeLight>();
     }
     // Use this for initialization
     void Start () {
@@ -27,7 +32,12 @@ public class LightIntensityChangeRepeat : MonoBehaviour {
         {
             currentTime = currentTime - cyclingTime;
         }
-        light.intensity = changeCurve.Evaluate(Mathf.Clamp01(currentTime / cyclingTime));
+        if(light)
+            light.intensity = changeCurve.Evaluate(Mathf.Clamp01(currentTime / cyclingTime));
+        if(aLight)
+            aLight.m_Intensity = changeCurve.Evaluate(Mathf.Clamp01(currentTime / cyclingTime));
+        if(tLight)
+            tLight.m_Intensity = changeCurve.Evaluate(Mathf.Clamp01(currentTime / cyclingTime));
     }
 
 
