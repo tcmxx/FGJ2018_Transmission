@@ -36,6 +36,11 @@ public class PlayerInput : MonoBehaviour {
         {
             Test();
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            PlayerController.Instance.OnInteract();
+        }
     }
 
 
