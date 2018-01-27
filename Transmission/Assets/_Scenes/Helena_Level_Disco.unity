@@ -3978,7 +3978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -308.96918
+    x: -307.5993
     y: -228.1851
     width: 120
     height: 40
@@ -3997,7 +3997,7 @@ MonoBehaviour:
   - {fileID: 132096235}
 --- !u!114 &132096239
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132096179}
@@ -4458,8 +4458,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -287.02338
-    y: -461.31912
+    x: -285.6535
+    y: -459.94925
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4790,7 +4790,7 @@ MonoBehaviour:
   - {fileID: 132096207}
 --- !u!114 &132096267
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132096179}
@@ -5131,9 +5131,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 132096224}
-  selectedCommands:
-  - {fileID: 132096180}
+  - {fileID: 132096238}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -5160,7 +5159,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &132096280
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132096179}
@@ -5186,7 +5185,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &132096281
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132096179}
@@ -5213,7 +5212,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &132096282
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132096179}
@@ -5239,7 +5238,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &132096283
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132096179}
@@ -5265,7 +5264,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &132096284
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132096179}
@@ -5291,7 +5290,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &132096285
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132096179}
@@ -5318,7 +5317,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &132096286
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132096179}
