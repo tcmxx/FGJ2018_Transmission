@@ -9,6 +9,8 @@ public class PlayerInput : MonoBehaviour {
 
     protected CharacterController characterController;
 
+    public Texture cursorTexture;
+
     public string horizontalAxis;
     public string verticalAxis;
     public string testButton = "Test";
@@ -22,7 +24,7 @@ public class PlayerInput : MonoBehaviour {
     }
     // Use this for initialization
     void Start () {
-		
+		//Cursor.SetCursor(cursorTexture,Vector2.zero,CursorMode.)
 	}
 	
 	// Update is called once per frame
@@ -41,6 +43,18 @@ public class PlayerInput : MonoBehaviour {
         {
             PlayerController.Instance.OnInteract();
         }
+    }
+
+    public void EnableMouseCursor()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+    }
+
+    public void DisableMouseCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
 
