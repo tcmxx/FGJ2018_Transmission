@@ -44,7 +44,7 @@ public class MouseLook : MonoBehaviour
 
     void Start()
     {
-        SmoothMoveRotTo(test.forward, 10, 3);
+        //SmoothMoveRotTo(test.forward, 10, 3);
     }
 
 
