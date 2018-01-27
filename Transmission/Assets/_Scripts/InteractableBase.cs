@@ -11,6 +11,8 @@ public class InteractableBase : MonoBehaviour {
     [SerializeField]
     private UnityEvent onClicked;
 
+    public bool enableInteraction = true;
+    public bool disableAfterClicked = true;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +26,10 @@ public class InteractableBase : MonoBehaviour {
     
     public virtual void OnClicked()
     {
-        onClicked.Invoke();
+        if(enableInteraction)
+            onClicked.Invoke();
+        if (disableAfterClicked)
+            enableInteraction = false;
     }
 
     public void SendFungusMessage(string message)
