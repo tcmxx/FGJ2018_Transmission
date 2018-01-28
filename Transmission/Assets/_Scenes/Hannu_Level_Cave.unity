@@ -5396,6 +5396,21 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224766957237316012, guid: c4125523d6b13c648af06946b9de74ee,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000076296
+      objectReference: {fileID: 0}
+    - target: {fileID: 224766957237316012, guid: c4125523d6b13c648af06946b9de74ee,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -238
+      objectReference: {fileID: 0}
+    - target: {fileID: 114518698864595220, guid: c4125523d6b13c648af06946b9de74ee,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4125523d6b13c648af06946b9de74ee, type: 2}
   m_IsPrefabParent: 0
