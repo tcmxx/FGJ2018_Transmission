@@ -2087,7 +2087,7 @@ GameObject:
   - component: {fileID: 377962891}
   - component: {fileID: 377962890}
   - component: {fileID: 377962889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3037,7 +3037,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 428804979}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NarrativeTriggers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5763,7 +5763,7 @@ GameObject:
   - component: {fileID: 1014617703}
   - component: {fileID: 1014617702}
   - component: {fileID: 1014617701}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10219,8 +10219,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1573690887}
-  selectedCommands:
-  - {fileID: 1573690918}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -11010,7 +11009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 50
   indentLevel: 0
-  text: Who are you all, you whom I will never meet, but whose path crosses mine?
+  text: Who are you all, you whom I will never meet, but whose paths cross mine?
   description: 3.3.1
   targetBlock: {fileID: 1573690908}
   hideIfVisited: 0
@@ -11208,7 +11207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 55
   indentLevel: 0
-  storyText: Who are you all, you whom I will never meet, but whose path crosses mine?
+  storyText: Who are you all, you whom I will never meet, but whose paths cross mine?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -16121,7 +16120,7 @@ GameObject:
   - component: {fileID: 1770030058}
   - component: {fileID: 1770030057}
   - component: {fileID: 1770030056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
