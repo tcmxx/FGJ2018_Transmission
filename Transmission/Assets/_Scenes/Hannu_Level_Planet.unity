@@ -3169,6 +3169,11 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7051d9b42d3220e488aa705c285f5652, type: 2}
   m_IsPrefabParent: 0
@@ -5527,6 +5532,11 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7051d9b42d3220e488aa705c285f5652, type: 2}
   m_IsPrefabParent: 0
@@ -6498,6 +6508,11 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7051d9b42d3220e488aa705c285f5652, type: 2}
   m_IsPrefabParent: 0
@@ -7170,7 +7185,7 @@ GameObject:
   - component: {fileID: 367665049}
   - component: {fileID: 367665048}
   - component: {fileID: 367665047}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 1.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10638,6 +10653,11 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7051d9b42d3220e488aa705c285f5652, type: 2}
   m_IsPrefabParent: 0
@@ -12035,6 +12055,11 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7051d9b42d3220e488aa705c285f5652, type: 2}
   m_IsPrefabParent: 0
@@ -12698,7 +12723,7 @@ GameObject:
   - component: {fileID: 664591485}
   - component: {fileID: 664591484}
   - component: {fileID: 664591483}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 1.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13809,6 +13834,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: df9586bbd73ed3344a2b41fdcf622860, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df9586bbd73ed3344a2b41fdcf622860, type: 3}
   m_IsPrefabParent: 0
@@ -14744,6 +14773,7 @@ Transform:
   - {fileID: 200458808}
   - {fileID: 743100280}
   - {fileID: 1904363920}
+  - {fileID: 1783911402}
   - {fileID: 875069257}
   - {fileID: 212166495}
   - {fileID: 541041990}
@@ -14770,7 +14800,6 @@ Transform:
   - {fileID: 1093984981}
   - {fileID: 1321531721}
   - {fileID: 177821787}
-  - {fileID: 1783911402}
   - {fileID: 1918581118}
   - {fileID: 1045833002}
   - {fileID: 1473407337}
@@ -18102,6 +18131,11 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7051d9b42d3220e488aa705c285f5652, type: 2}
   m_IsPrefabParent: 0
@@ -18416,6 +18450,11 @@ Prefab:
         type: 2}
       propertyPath: VelocityModule.speedModifier.scalar
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
         type: 2}
@@ -19034,7 +19073,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 971663450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NarrativeTriggers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19968,6 +20007,11 @@ Prefab:
         type: 2}
       propertyPath: ShapeModule.radiusThickness
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
         type: 2}
@@ -21675,6 +21719,11 @@ Prefab:
         type: 2}
       propertyPath: ShapeModule.radiusThickness
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
         type: 2}
@@ -26219,6 +26268,11 @@ Prefab:
     - target: {fileID: 4095850093455760, guid: 7051d9b42d3220e488aa705c285f5652, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.1940002
+      objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
         type: 2}
@@ -33069,6 +33123,11 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7051d9b42d3220e488aa705c285f5652, type: 2}
   m_IsPrefabParent: 0
@@ -34177,7 +34236,7 @@ Transform:
   - {fileID: 1680876630}
   - {fileID: 1068478354}
   m_Father: {fileID: 801701047}
-  m_RootOrder: 298
+  m_RootOrder: 272
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1787804511 stripped
 Transform:
@@ -35522,6 +35581,7 @@ GameObject:
   - component: {fileID: 1884675956}
   - component: {fileID: 1884675958}
   - component: {fileID: 1884675957}
+  - component: {fileID: 1884675959}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -35554,9 +35614,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1884675907}
+  - {fileID: 1884675911}
   selectedCommands:
-  - {fileID: 1884675957}
+  - {fileID: 1884675908}
   variables: []
   description: 
   stepPause: 0
@@ -35740,7 +35800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: Blows my mind each time I think about it.
+  storyText: Am I the only one here weirded out by this whole concept?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -35766,7 +35826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  storyText: "And now this. We're colonizing planets. \r\nCasually."
+  storyText: "And now this. We're colonizing planets. \rCasually."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -35819,8 +35879,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: Am I the only one here weirded out by this whole concept? Robert says,
-    "You think about this too much, man".
+  storyText: It still blows my mind that we're actually here. Robert says, "You think
+    about this too much, man."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -36293,7 +36353,7 @@ MonoBehaviour:
   itemId: 116
   indentLevel: 0
   storyText: "OK then. Let\u2019s get faster. Let's go further. Let\u2019s conquer
-    the whole universe."
+    the universe."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -38492,7 +38552,7 @@ MonoBehaviour:
   itemId: 63
   indentLevel: 0
   storyText: "Decontamination. Insulation. Forced hibernation.\r It\u2019s not paranoia
-    when the world *is* out to get you."
+    when the world is out to get you."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -38544,7 +38604,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 61
   indentLevel: 0
-  storyText: So many steps you need to take to separate yourself from what lies outside.
+  storyText: Here, you need to separate yourself from the outside world in so many
+    ways.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -38603,8 +38664,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 58
   indentLevel: 0
-  storyText: Traditions are dead, technology is our master. Everybody wants to take
-    one step forward. Always. Constantly.
+  storyText: Traditions are dead, technology is our master. Everybody wants to go
+    one step further. Always.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -38630,7 +38691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 57
   indentLevel: 0
-  storyText: 'We race towards the future all the time. We look forward and not at
+  storyText: 'We race towards the future, we never stop. We look forward and not at
     each other. '
   description: 
   character: {fileID: 0}
@@ -38657,8 +38718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 56
   indentLevel: 0
-  storyText: "Our progress has made our ancestors\u2019 dreams and nightmares come
-    true."
+  storyText: "We have made our ancestors\u2019 dreams and nightmares come true."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -38684,8 +38744,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 55
   indentLevel: 0
-  storyText: "We conquered our own world, and now we are conquering others.\r What
-    is all this progress for? "
+  storyText: "We conquered our own world, and now we are conquering others.\r But
+    what's the point of all this progress?"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -38712,7 +38772,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -123.81257
-    y: -231.45499
+    y: -230.08513
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -38782,7 +38842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 51
   indentLevel: 0
-  text: So many steps you need to take to separate yourself from what lies outside
+  text: Here, you need to separate yourself from the outside world in so many ways.
   description: 1.1.2
   targetBlock: {fileID: 1884675911}
   hideIfVisited: 0
@@ -38860,7 +38920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 46
   indentLevel: 0
-  storyText: "And just like a machine, we just don\u2019t want to be turned off."
+  storyText: "And we just don\u2019t want to be turned off."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -38886,8 +38946,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 45
   indentLevel: 0
-  storyText: Taking other lives, to keep living our own. We keep our body running
-    like a machine that needs fuel.
+  storyText: Taking other lives to keep living our own. We keep our body running like
+    a machine that needs fuel.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -38913,8 +38973,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  storyText: "After all, we are just looking for nourishment.\r Since the beginning
-    of life\r\neverything comes down to feeding ourselves."
+  storyText: "In the end, we are just looking for nourishment.\r Since the beginning
+    of life\r, everything comes down to feeding ourselves."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -38997,8 +39057,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  storyText: God, the smell of a forest after rain. The tang of newly grown spruce
-    sprouts.
+  storyText: Something that tastes like it has grown from soil and not from a smear
+    on glass.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -39025,7 +39085,7 @@ MonoBehaviour:
   itemId: 39
   indentLevel: 0
   storyText: "At this point, I would do murder to eat something, anything fresh.\r
-    Something that tastes like it has grown from soil and not from a smear on glass."
+    Fruits, vegetables. Even celery."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -39066,6 +39126,7 @@ MonoBehaviour:
   - {fileID: 1884675880}
   - {fileID: 1884675928}
   - {fileID: 1884675927}
+  - {fileID: 1884675959}
   - {fileID: 1884675926}
   - {fileID: 1884675879}
 --- !u!114 &1884675930
@@ -39081,7 +39142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 36
   indentLevel: 0
-  storyText: Except if one's myself, maybe.
+  storyText: I wonder if anyone else misses tablecloths?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -39107,8 +39168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 0
-  storyText: "I like to imagine we have a beautiful tablecloth at least.\r In times
-    of crisis one does not think about tablecloths."
+  storyText: "I like to imagine we have a beautiful tablecloth, at least.\r But you
+    don't waste resources launching tablecloths into space."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -39134,8 +39195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 34
   indentLevel: 0
-  storyText: "It made more sense when the food actually had some taste.\r Here we
-    are, eating processed shit out of cans."
+  storyText: "It made more sense when the food actually had some taste.\r But here
+    we are, gathered together to eat processed shit out of cans."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -39162,7 +39223,7 @@ MonoBehaviour:
   itemId: 33
   indentLevel: 0
   storyText: "It's adorable how we still bother to eat together here.\r I guess humans
-    like rituals."
+    like their rituals."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -39232,7 +39293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  text: After all, we are just looking for nourishment.
+  text: In the end, we are just looking for nourishment.
   description: 1.1.3
   targetBlock: {fileID: 1884675925}
   hideIfVisited: 0
@@ -39471,7 +39532,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  storyText: Everybody is counting on me but... why do they take me for granted?
+  storyText: Everybody is counting on me... so why does it still feel like they take
+    me for granted?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -39524,7 +39586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: "I\u2019m always listening, that\u2019s my job. Every day hundreds of
+  storyText: "I\u2019m always listening, that\u2019s my job. Every day, hundreds of
     messages sent across the vastness of space."
   description: 
   character: {fileID: 0}
@@ -39706,7 +39768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  text: Am I the only one here weirded out by this whole concept?
+  text: It still blows my mind that we're actually here.
   description: 1.1.1
   targetBlock: {fileID: 1884675852}
   hideIfVisited: 0
@@ -39953,6 +40015,33 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1884675959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1884675849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 162
+  indentLevel: 0
+  storyText: God, the smell of a forest after rain. The tang of newly grown spruce
+    sprouts.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!4 &1886656662 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4388145023293094, guid: 2ec15da1370b42b4399e17afe91e483f,
@@ -42697,6 +42786,11 @@ Prefab:
         type: 2}
       propertyPath: ShapeModule.radiusThickness
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     - target: {fileID: 198929819995128366, guid: 7051d9b42d3220e488aa705c285f5652,
         type: 2}
