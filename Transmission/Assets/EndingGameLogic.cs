@@ -48,7 +48,7 @@ public class EndingGameLogic : MonoBehaviour {
         yield return new WaitForSeconds(10);
         */
         //look up the sky
-        PlayerController.Instance.GetComponentInChildren<MouseLook>().SmoothMoveRotTo(finalLookUpTransform.forward, 5, 2);
+        PlayerController.Instance.GetComponentInChildren<MouseLook>().SmoothMoveRotTo(finalLookUpTransform.forward, 5, 20*Time.deltaTime);
         yield return new WaitForSeconds(5);
         foreach (var u in GamePlayUI.Instance.creditUIs)
         {
