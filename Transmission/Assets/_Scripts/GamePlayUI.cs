@@ -26,6 +26,7 @@ public class GamePlayUI : MonoBehaviour {
     [SerializeField]
     protected MenuStatus status;
 
+    public Transform startPositionTransform;
 
     public enum CursorType
     {
@@ -98,6 +99,8 @@ public class GamePlayUI : MonoBehaviour {
 
     public void StartPlayGame()
     {
+        PlayerController.Instance.transform.position = startPositionTransform.position;
+        PlayerController.Instance.transform.rotation = startPositionTransform.rotation;
         StartCoroutine(StartGameCoroutine());
     }
 
