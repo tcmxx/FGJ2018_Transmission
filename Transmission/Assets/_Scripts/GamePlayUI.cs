@@ -43,6 +43,8 @@ public class GamePlayUI : MonoBehaviour {
         SetCursor(CursorType.Normal);
         if(TempGlobalVars.shouldInMenu && status == MenuStatus.WaitingForClick)
         {
+            PlayerController.Instance.transform.position = startPositionTransform.position;
+            PlayerController.Instance.transform.rotation = startPositionTransform.rotation;
             StartMenu();
         }
         else
@@ -99,8 +101,7 @@ public class GamePlayUI : MonoBehaviour {
 
     public void StartPlayGame()
     {
-        PlayerController.Instance.transform.position = startPositionTransform.position;
-        PlayerController.Instance.transform.rotation = startPositionTransform.rotation;
+
         StartCoroutine(StartGameCoroutine());
     }
 
