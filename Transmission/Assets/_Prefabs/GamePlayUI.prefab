@@ -145,6 +145,7 @@ MonoBehaviour:
   normalCursorRef: {fileID: 1990549109486514}
   interactableCursorRef: {fileID: 1813374007387040}
   cursorPromptTextRef: {fileID: 114816142547584454}
+  interactPanel: {fileID: 1275678216413234}
   skyTextFadeTime: 2
   fadeUIRef: {fileID: 114616800398817834}
 --- !u!114 &114477592235774150
