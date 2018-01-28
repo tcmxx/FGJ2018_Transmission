@@ -5406,6 +5406,11 @@ Prefab:
       propertyPath: startPositionTransform
       value: 
       objectReference: {fileID: 551012454}
+    - target: {fileID: 114072373332725048, guid: c4125523d6b13c648af06946b9de74ee,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Hollow sounds. Distorted voices. Faces I don''t recognize anymore. '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4125523d6b13c648af06946b9de74ee, type: 2}
   m_IsPrefabParent: 0
