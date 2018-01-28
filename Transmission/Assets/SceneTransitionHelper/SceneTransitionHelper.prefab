@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maskUI: {fileID: 114158024905456986}
-  maskFadeInTime: 0.5
-  maskFadeOutTime: 0.3
+  maskFadeInTime: 2
+  maskFadeOutTime: 1
   useTransitionScene: 0
   transitionSceneName: 
   sceneFadeInTime: 0

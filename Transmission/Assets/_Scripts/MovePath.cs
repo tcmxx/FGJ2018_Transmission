@@ -21,6 +21,8 @@ public class MovePath : MonoBehaviour {
     [SerializeField]
     private float moveTimer;
     private Transform transformToMove = null;
+    public Transform moveTransformDir = null;
+
 
     public enum PathMode
     {
@@ -46,10 +48,20 @@ public class MovePath : MonoBehaviour {
         if (moveTimer > 0 && transformToMove != null)
         {
             moveTimer -=  Time.deltaTime;
-            float t = moveTimer / moveTime;
+            float t = (moveTime - moveTimer) / moveTime;
             transformToMove.position = Curves.LerpTranslation(points, t);
             if (autoTurning)
-                transformToMove.localRotation = Curves.LerpOrientation(points, t);
+            {
+                if(moveTransformDir != null)
+                {
+                    transformToMove.localRotation = Curves.LerpOrientation(points, t)* moveTransformDir.rotation;
+                }
+                else
+                {
+                    transformToMove.localRotation = Curves.LerpOrientation(points, t);
+                }
+                
+            }
             if(moveTimer <= 0 && looping)
             {
                 ResetMove();

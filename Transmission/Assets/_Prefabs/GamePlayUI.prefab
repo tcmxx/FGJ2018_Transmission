@@ -148,6 +148,8 @@ MonoBehaviour:
   interactPanel: {fileID: 1275678216413234}
   skyTextFadeTime: 2
   fadeUIRef: {fileID: 114616800398817834}
+  startSceneName: Hannu_Level_Planet
+  status: 0
 --- !u!114 &114477592235774150
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -24719,15 +24719,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4491893473049254, guid: 79a27e7282a359b48a474bbdbb899989, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 30.53
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 4491893473049254, guid: 79a27e7282a359b48a474bbdbb899989, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.21
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4491893473049254, guid: 79a27e7282a359b48a474bbdbb899989, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -6.14
+      value: -20.7
       objectReference: {fileID: 0}
     - target: {fileID: 4491893473049254, guid: 79a27e7282a359b48a474bbdbb899989, type: 2}
       propertyPath: m_LocalRotation.x
@@ -30562,7 +30562,7 @@ MonoBehaviour:
   itemId: 134
   indentLevel: 0
   storyText: "Everything repeats; nothing stays the same. That\u2019s the tragedy
-    of it. That\u2019s the glory of it."
+    of it. That\u2019s the beauty of it."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -30588,8 +30588,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 133
   indentLevel: 0
-  storyText: "Are we supposed to follow it at the same time altogether? \r\nOr should
-    we look for our own? Just to feel special? "
+  storyText: Are we all following the same beat? Or should we look for our own? Just
+    to feel special?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -30615,8 +30615,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 132
   indentLevel: 0
-  storyText: "I don\u2019t know if I want to feel special, I don\u2019t know if I
-    want to be... Alone."
+  storyText: "I don\u2019t know if I want to be special. Not if it means being...
+    alone."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -30642,7 +30642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 131
   indentLevel: 0
-  storyText: 'I wish somebody could feel this rhyme in the same way as I do. '
+  storyText: Does anybody feel the same rhythm as I do?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -30695,7 +30695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 128
   indentLevel: 0
-  storyText: "You\u2019re never as sober as when you are this drunk.\r\n"
+  storyText: "You\u2019re never as sober as when you are this drunk."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -30799,7 +30799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 123
   indentLevel: 0
-  storyText: "Like it\u2019s always the first time... because it always is. \r"
+  storyText: "Like it\u2019s always the first time... because it always is."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -30852,8 +30852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 121
   indentLevel: 0
-  storyText: 'We could have a hangover breakfast in bed. Bitch about this evening
-    together. '
+  storyText: We could have some hangover breakfast. Bitch about this evening together.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -30905,7 +30904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 119
   indentLevel: 0
-  storyText: That special shot, that will make us feel alive, once again.
+  storyText: That special shot that will make us feel alive once again.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -30931,8 +30930,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 116
   indentLevel: 0
-  storyText: Some of us keep playing to get those empty shots. But some of us keep
-    playing to get that one unique meaningful contact.
+  storyText: So many seem to play for the empty shots. But some of us keep playing
+    to get that one unique meaningful contact.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -30947,7 +30946,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1781211178
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31011,7 +31010,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211179
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31075,7 +31074,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211180
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31139,7 +31138,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211181
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31203,7 +31202,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211182
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31267,7 +31266,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211183
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31331,7 +31330,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211184
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31395,7 +31394,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211185
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31459,7 +31458,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211186
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31523,7 +31522,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211187
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31587,7 +31586,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211188
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31651,7 +31650,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211189
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31715,7 +31714,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211190
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31779,7 +31778,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211191
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31843,7 +31842,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211192
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31907,7 +31906,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211193
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -31971,7 +31970,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211194
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32035,7 +32034,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211195
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32099,7 +32098,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211196
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32163,7 +32162,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211197
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32227,7 +32226,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211198
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32291,7 +32290,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211199
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32355,7 +32354,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211200
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32419,7 +32418,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211201
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32483,7 +32482,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211202
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32547,7 +32546,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211203
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32611,7 +32610,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211204
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32675,7 +32674,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211205
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32739,7 +32738,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211206
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -32803,7 +32802,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1781211207
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781211162}
@@ -33147,7 +33146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 68
   indentLevel: 0
-  storyText: And when we love something, we squeeze with our grubby little hands until
+  storyText: When we love something, we squeeze with our grubby little hands until
     it croaks "it's not you, it's me" and dumps our sorry ass.
   description: 
   character: {fileID: 0}
@@ -33175,7 +33174,7 @@ MonoBehaviour:
   itemId: 67
   indentLevel: 0
   storyText: "We stick our appendages where they\u2019re not wanted. We put things
-    up our nose that should never see the inside of a nose. "
+    up our nose that shouldn't see the inside of a nose."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33201,7 +33200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 66
   indentLevel: 0
-  storyText: "Look at us. We\u2019re children, really."
+  storyText: "Look at us, fumbling around in the dark. We\u2019re children, really."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33260,8 +33259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 63
   indentLevel: 0
-  storyText: 'Although I must admit, it was nice to dance with Maria. Should I text
-    her tomorrow? '
+  storyText: Although... it was nice to dance with Maria. Should I text her tomorrow?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33313,7 +33311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 61
   indentLevel: 0
-  storyText: Every time I finally exit a party I feel like a brave survivor.
+  storyText: Every time I finally exit a party, I feel like a brave survivor.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33371,7 +33369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 58
   indentLevel: 0
-  storyText: This is a Russian roulette, with guns loaded with trivial interactions.
+  storyText: This is Russian roulette, guns loaded with trivial interactions.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33397,8 +33395,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 57
   indentLevel: 0
-  storyText: "\u201CWhere are you from? For how long are you staying? What do you
-    study?\" This is just part of the game, isn\u2019t it?"
+  storyText: "\u201CWhere are you from? How long are you staying? What do you study?\"
+    This is just part of the game, isn\u2019t it?"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33424,8 +33422,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 56
   indentLevel: 0
-  storyText: "Oh no, I\u2019ve listened to these conversations too many times. Give
-    me a break."
+  storyText: "I\u2019ve listened to these conversations too many times. Give me a
+    break."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33451,7 +33449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 55
   indentLevel: 0
-  storyText: Well, at least here people can talk. Or can they?
+  storyText: Here, at least, people can talk. Though not really communicate.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33523,7 +33521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 52
   indentLevel: 0
-  text: "Look at us. We\u2019re children, really."
+  text: "Look at us, fumbling around in the dark. We\u2019re children, really."
   description: 2.3.3
   targetBlock: {fileID: 1781211216}
   hideIfVisited: 0
@@ -33547,7 +33545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 51
   indentLevel: 0
-  text: Every time I finally exit a party I feel like a brave survivor.
+  text: Every time I finally exit a party, I feel like a brave survivor.
   description: 2.3.2
   targetBlock: {fileID: 1781211220}
   hideIfVisited: 0
@@ -33571,7 +33569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 50
   indentLevel: 0
-  text: Well, at least here people can talk. Or can they?
+  text: Here, at least, people can talk. Though not really communicate.
   description: 2.3.1
   targetBlock: {fileID: 1781211225}
   hideIfVisited: 0
@@ -33625,8 +33623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 45
   indentLevel: 0
-  storyText: "This is some kind of force, an energy that keeps me pushing\r bit after
-    bit, beat after beat, towards something I can\u2019t wait to find out."
+  storyText: "It's some kind of a force: an energy that keeps me pushing forward,
+    bit after bit, beat after beat, towards something I can\u2019t wait to see."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33652,8 +33650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  storyText: "This rhythm, I can\u2019t hear it, but I feel it. This is more than
-    just music."
+  storyText: There's a rhythm you can't hear, only feel. It's more than just music.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33737,7 +33734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  storyText: You look around, come up for air, see everything as if for the first
+  storyText: You come up for air, look around, see everything as if for the first
     time.
   description: 
   character: {fileID: 0}
@@ -33824,7 +33821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 36
   indentLevel: 0
-  storyText: 'So crowded we don''t have to feel empty anymore.  '
+  storyText: So crowded we don't have to feel empty anymore.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33850,8 +33847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 0
-  storyText: "In a place so dark we don't have to look each other in the face.\r So
-    loud we don't have to talk. "
+  storyText: In a place so dark we don't have to see the same longing on each other's
+    faces. So loud we don't have to talk.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33877,8 +33874,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 34
   indentLevel: 0
-  storyText: 'So drunk we won''t have to remember how embarrassing it feels to want
-    that. '
+  storyText: So drunk we won't have to remember how embarrassing it feels to want
+    to belong.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33904,8 +33901,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 33
   indentLevel: 0
-  storyText: "We party because we need an excuse to be together.\r Well done, we are
-    together, here, now."
+  storyText: We party because we need an excuse to be together. Well, mission accomplished.
+    Here we are.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -33975,7 +33972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  text: "This rhythm, I can\u2019t hear it, but I feel it."
+  text: There's a rhythm you can't hear, only feel.
   description: 2.2.3
   targetBlock: {fileID: 1781211233}
   hideIfVisited: 0
@@ -34142,8 +34139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 21
   indentLevel: 0
-  storyText: "And with all this drinking, I bet nobody here will remember much from
-    the night. \rThis is just a fragile experience, it will soon fade away."
+  storyText: And with all this drinking, I doubt anybody here will remember much,
+    anyway.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -34169,8 +34166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 20
   indentLevel: 0
-  storyText: "Cool memories, uh\u2026\r A collection of moments that glorify your
-    uselessness. "
+  storyText: Cool memories? A collection of moments that glorify your uselessness.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -34196,8 +34192,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 19
   indentLevel: 0
-  storyText: "Why the hell should we spend time like this? \rThey say \u201CThat\u2019s
-    how cool memories are made.\""
+  storyText: "Why the hell should we spend time like this? \u201CThat\u2019s how cool
+    memories are made,\" they say."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -34223,9 +34219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 18
   indentLevel: 0
-  storyText: "Is this what we really need at our age? It\u2019s like they tell us
-    to waste our time now, because we won\u2019t be able to waste it properly as grown
-    ups. "
+  storyText: Is this really how we should spend our youth? Waste time now, because
+    grownups have no more time to waste?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -34308,7 +34303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: Does it mean we all hate ourselves here?
+  storyText: Is this how we all feel? Do we all hate ourselves here?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -34334,7 +34329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: "I drink, therefore I am! Able to enjoy myself, of course.\r"
+  storyText: I drink, therefore I am. Able to enjoy myself, of course.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -34418,7 +34413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: the university student. A creature of incalculable privilege and unfathomable
+  storyText: the college student. A creature of incalculable privilege and unfathomable
     misery.
   description: 
   character: {fileID: 0}
@@ -34503,7 +34498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 0
-  text: Is this what we really need at our age?
+  text: Is this really how we should spend our youth?
   description: 2.1.3
   targetBlock: {fileID: 1781211253}
   hideIfVisited: 0
@@ -34591,7 +34586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  text: I drink, therefore I am.
+  text: I drink, therefore I am. Able to enjoy myself.
   description: 2.1.2
   targetBlock: {fileID: 1781211257}
   hideIfVisited: 0
@@ -34695,7 +34690,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1781211230}
+  - {fileID: 1781211220}
   selectedCommands: []
   variables: []
   description: 

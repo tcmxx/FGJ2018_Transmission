@@ -14,6 +14,18 @@ public class GamePlayUI : MonoBehaviour {
     public GameObject interactPanel;
     public float skyTextFadeTime = 2;
     public TCUtils.TCFadingUI fadeUIRef;
+
+    public string startSceneName;
+
+    public enum MenuStatus
+    {
+        WaitingForClick,
+        Gameplay
+    }
+    [SerializeField]
+    protected MenuStatus status;
+
+
     public enum CursorType
     {
         Normal,
@@ -27,12 +39,29 @@ public class GamePlayUI : MonoBehaviour {
     // Use this for initialization
     void Start () {
         SetCursor(CursorType.Normal);
+        if(TempGlobalVars.shouldInMenu && status == MenuStatus.WaitingForClick)
+        {
+            StartMenu();
+            status = MenuStatus.WaitingForClick;
+        }
+        else
+        {
+            status = MenuStatus.Gameplay;
+            fadeUIRef.FadeOut(0.1f, null);
+        }
         //FadoutSkyText();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(status == MenuStatus.WaitingForClick)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                StartPlayGame();
+                status = MenuStatus.Gameplay;
+            }
+        }
 	}
 
     public void FadinSkyText(string text)
@@ -67,5 +96,16 @@ public class GamePlayUI : MonoBehaviour {
         interactPanel.SetActive(enable);
     }
 
+    public void StartPlayGame()
+    {
+        TCUtils.TCSceneTransitionHelper.Instance.StartLoadingScene(startSceneName);
+        TempGlobalVars.shouldInMenu = false;
+    }
 
+    public void StartMenu()
+    {
+        FadoutSkyText();
+        PlayerInput.Instance.enabled = false;
+        FadinSkyText("Click to Start");
+    }
 }
