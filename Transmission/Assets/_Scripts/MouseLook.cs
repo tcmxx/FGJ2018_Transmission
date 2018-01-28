@@ -45,6 +45,7 @@ public class MouseLook : MonoBehaviour
     void Start()
     {
         //SmoothMoveRotTo(test.forward, 10, 3);
+        rotationY = -yTransform.localEulerAngles.x;
     }
 
 
@@ -97,12 +98,31 @@ public class MouseLook : MonoBehaviour
 
     public void RotationTowards(Vector3 front, float maxDeltaAngle)
     {
+        var temp = front;
         front.y = 0;
         front.Normalize();
         xTransform.rotation = Quaternion.RotateTowards(xTransform.rotation, Quaternion.LookRotation(front, Vector3.up), maxDeltaAngle);
 
         Vector3 localEulerAngles = yTransform.localEulerAngles;
-        float desiredYAngle = Mathf.Atan2(front.y, Mathf.Sqrt(front.x * front.x + front.z * front.z));
+        float desiredYAngle = Mathf.Atan2(temp.y, Mathf.Sqrt(temp.x * temp.x + temp.z * temp.z))*Mathf.Rad2Deg;
+        if(desiredYAngle - rotationY >= 180)
+        {
+            desiredYAngle -= 360;
+        }else if (desiredYAngle - rotationY <= -180)
+        {
+            desiredYAngle += 360;
+        }
+
         rotationY += Mathf.Clamp(maxDeltaAngle,0,Mathf.Abs(desiredYAngle - rotationY)) * Mathf.Sign(desiredYAngle - rotationY);
+        yTransform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
+    }
+
+
+    public void RotateLookFront(float maxSpeed = 1)
+    {
+        Vector3 dir = transform.forward;
+        dir.y = 0;
+
+        SmoothMoveRotTo(dir.normalized, 5, maxSpeed, null);
     }
 }

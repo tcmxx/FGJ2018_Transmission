@@ -9,8 +9,7 @@ public class PlayerController : MonoBehaviour {
     protected Camera mainCamera;
     public float maxRaycastDistance = 50;
     public LayerMask raycastLayer;
-
-
+    
     protected InteractableBase currentInteractable = null;
     private void Awake()
     {
@@ -63,7 +62,7 @@ public class PlayerController : MonoBehaviour {
         }
         
     }
-
+    
 
 
 

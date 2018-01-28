@@ -7,6 +7,8 @@ using Fungus;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerInput : MonoBehaviour {
 
+    public static PlayerInput Instance { get; private set; }
+
     protected CharacterController characterController;
 
     public Texture2D cursorTexture;
@@ -25,6 +27,7 @@ public class PlayerInput : MonoBehaviour {
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
+        Instance = this;
     }
     // Use this for initialization
     void Start () {
