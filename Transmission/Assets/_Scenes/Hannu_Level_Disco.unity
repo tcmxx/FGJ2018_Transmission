@@ -27362,6 +27362,63 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1405700504}
   m_Mesh: {fileID: 4300092, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
+--- !u!1001 &1406452660
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114064748688398060, guid: 141bdae6c3fc7a042851342739db9803,
+        type: 2}
+      propertyPath: musicList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105738922505266, guid: 141bdae6c3fc7a042851342739db9803, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105738922505266, guid: 141bdae6c3fc7a042851342739db9803, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105738922505266, guid: 141bdae6c3fc7a042851342739db9803, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105738922505266, guid: 141bdae6c3fc7a042851342739db9803, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105738922505266, guid: 141bdae6c3fc7a042851342739db9803, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105738922505266, guid: 141bdae6c3fc7a042851342739db9803, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105738922505266, guid: 141bdae6c3fc7a042851342739db9803, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105738922505266, guid: 141bdae6c3fc7a042851342739db9803, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064748688398060, guid: 141bdae6c3fc7a042851342739db9803,
+        type: 2}
+      propertyPath: musicList.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: eabf9e3e7095bea41b721d6bae73437a, type: 3}
+    - target: {fileID: 114064748688398060, guid: 141bdae6c3fc7a042851342739db9803,
+        type: 2}
+      propertyPath: musicList.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1bc8c22bbbdbc1e4f82abfc5476f9548, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 141bdae6c3fc7a042851342739db9803, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1418772615
 GameObject:
   m_ObjectHideFlags: 0
