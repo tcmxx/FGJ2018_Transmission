@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour {
         RaycastHit hitInfo;
         if(Physics.Raycast(ray, out hitInfo, maxRaycastDistance, raycastLayer, QueryTriggerInteraction.Collide)){
             currentInteractable = hitInfo.collider.gameObject.GetComponent<InteractableBase>();
-            if(currentInteractable.enableInteraction == false)
+            if(currentInteractable != null&& currentInteractable.enableInteraction == false)
             {
                 currentInteractable = null;
             }
