@@ -98,7 +98,7 @@ public class GamePlayUI : MonoBehaviour {
 
     public void StartPlayGame()
     {
-
+        StartCoroutine(StartGameCoroutine());
     }
 
     protected IEnumerator StartGameCoroutine()
