@@ -16,7 +16,8 @@ public class GamePlayUI : MonoBehaviour {
     public TCUtils.TCFadingUI fadeUIRef;
 
     public string startSceneName;
-
+    public List<TCUtils.TCFadingUI> creditUIs;
+    public List<TCUtils.TCFadingUI> startUIs;
     public enum MenuStatus
     {
         WaitingForClick,
@@ -42,7 +43,6 @@ public class GamePlayUI : MonoBehaviour {
         if(TempGlobalVars.shouldInMenu && status == MenuStatus.WaitingForClick)
         {
             StartMenu();
-            status = MenuStatus.WaitingForClick;
         }
         else
         {
@@ -98,14 +98,31 @@ public class GamePlayUI : MonoBehaviour {
 
     public void StartPlayGame()
     {
+
+    }
+
+    protected IEnumerator StartGameCoroutine()
+    {
+        fadeUIRef.FadeOut(2, null);
+        yield return new WaitForSeconds(2);
+        foreach (var u in startUIs)
+        {
+            u.gameObject.SetActive(true);
+            u.FadeInOut(2, 2, 2, null);
+            yield return new WaitForSeconds(6);
+            u.gameObject.SetActive(false);
+        }
         TCUtils.TCSceneTransitionHelper.Instance.StartLoadingScene(startSceneName);
         TempGlobalVars.shouldInMenu = false;
     }
 
+    
     public void StartMenu()
     {
         FadoutSkyText();
         PlayerInput.Instance.enabled = false;
         FadinSkyText("Click to Start");
+        status = MenuStatus.WaitingForClick;
     }
+
 }
