@@ -4,5 +4,5 @@ using UnityEngine;
 
 public static class TempGlobalVars  {
 
-    public static bool shouldInMenu = false;
+    public static bool shouldInMenu = true;
 }
