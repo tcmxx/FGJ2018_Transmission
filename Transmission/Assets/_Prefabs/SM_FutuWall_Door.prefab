@@ -173,4 +173,5 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   enableInteraction: 1
-  disableAfterClicked: 1
+  disableAfterClicked: 0
+  maxInteractableDistance: 4

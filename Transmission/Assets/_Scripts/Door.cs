@@ -16,10 +16,12 @@ public class Door : MonoBehaviour {
 
     public string toCloseText = "Click to Close";
     public string toOpenText = "Click to Open";
-    
+
+    protected float startAngle;
 	// Use this for initialization
 	void Start () {
         interactableRef.promptText = isOpen? toCloseText:toOpenText;
+        startAngle = transform.localRotation.eulerAngles.y;
     }
 	
 	// Update is called once per frame
@@ -34,8 +36,7 @@ public class Door : MonoBehaviour {
         
         isOpen = !isOpen;
         interactableRef.promptText = isOpen ? toCloseText : toOpenText;
-        var rot = transform.rotation;
-        desiredRot = Quaternion.AngleAxis(isOpen?openAngle:0, Vector3.up);
+        desiredRot = Quaternion.AngleAxis(isOpen?openAngle+ startAngle: startAngle, Vector3.up);
         
 
     }

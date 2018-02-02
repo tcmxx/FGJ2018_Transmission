@@ -13,7 +13,8 @@ public class InteractableBase : MonoBehaviour {
 
     public bool enableInteraction = true;
     public bool disableAfterClicked = true;
-
+    [Range(0,100)]
+    public float maxInteractableDistance = 10;
 	// Use this for initialization
 	void Start () {
 		

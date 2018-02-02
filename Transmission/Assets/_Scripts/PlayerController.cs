@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
     public static PlayerController Instance { get;private set; }
 
     protected Camera mainCamera;
-    public float maxRaycastDistance = 50;
+    public float maxRaycastDistance = 100;
     public LayerMask raycastLayer;
     
     protected InteractableBase currentInteractable = null;
@@ -52,6 +52,9 @@ public class PlayerController : MonoBehaviour {
         if(Physics.Raycast(ray, out hitInfo, maxRaycastDistance, raycastLayer, QueryTriggerInteraction.Collide)){
             currentInteractable = hitInfo.collider.gameObject.GetComponent<InteractableBase>();
             if(currentInteractable != null&& currentInteractable.enableInteraction == false)
+            {
+                currentInteractable = null;
+            }else if(currentInteractable != null && hitInfo.distance > currentInteractable.maxInteractableDistance)
             {
                 currentInteractable = null;
             }
